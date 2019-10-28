@@ -1,6 +1,6 @@
 Name:           vlc-bittorrent
 Version:        2.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bittorrent plugin for VLC
 
 License:        GPLv3+
@@ -66,6 +66,9 @@ fi || :
 
 
 %changelog
+* Mon Oct 28 2019 Leigh Scott <leigh123linux@googlemail.com> - 2.7-2
+- Rebuild for libtorrent SONAME bump
+
 * Wed Aug 21 2019 Nicolas Chauvet <kwizart@gmail.com> - 2.7-1
 - Update to 2.7
 
