@@ -1,0 +1,24 @@
+From eed8cef593635bf9232b0fc74d9df260e5ca3e32 Mon Sep 17 00:00:00 2001
+From: Leigh Scott <leigh123linux@gmail.com>
+Date: Fri, 29 Nov 2019 09:05:26 +0000
+Subject: [PATCH] fix one-past-end issue
+
+See issue for details.
+https://github.com/arvidn/libtorrent/issues/4126
+---
+ src/download.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/download.cpp b/src/download.cpp
+index 432dcd5..64d2792 100644
+--- a/src/download.cpp
++++ b/src/download.cpp
+@@ -318,7 +318,7 @@ Download::move_window(int piece)
+ 		return;
+ 
+ 	// Move to first unfinished piece
+-	for (; m_torrent_handle.have_piece(piece) && piece < np; piece++);
++	for (; piece < np && m_torrent_handle.have_piece(piece) ; piece++);
+ 
+ 	m_window_start = piece;
+ 

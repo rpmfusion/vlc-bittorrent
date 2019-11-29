@@ -1,11 +1,12 @@
 Name:           vlc-bittorrent
 Version:        2.7
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Bittorrent plugin for VLC
 
 License:        GPLv3+
 URL:            https://github.com/johang/vlc-bittorrent
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
+Patch0:         %{url}/pull/37.patch#/fix-one-past-end-issue.patch
 
 BuildRequires:  gcc-c++
 BuildRequires:  libtool
@@ -27,7 +28,7 @@ VLC and stream any media that it contains.
 
 
 %prep
-%autosetup
+%autosetup -p1
 autoreconf -vif
 
 %build
@@ -66,6 +67,9 @@ fi || :
 
 
 %changelog
+* Fri Nov 29 2019 Leigh Scott <leigh123linux@gmail.com> - 2.7-3
+- Add fix for rfbz#5433
+
 * Mon Oct 28 2019 Leigh Scott <leigh123linux@googlemail.com> - 2.7-2
 - Rebuild for libtorrent SONAME bump
 
