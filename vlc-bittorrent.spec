@@ -1,6 +1,6 @@
 Name:           vlc-bittorrent
 Version:        2.7
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Bittorrent plugin for VLC
 
 License:        GPLv3+
@@ -67,6 +67,9 @@ fi || :
 
 
 %changelog
+* Wed Feb 05 2020 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 2.7-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
 * Fri Nov 29 2019 Leigh Scott <leigh123linux@gmail.com> - 2.7-3
 - Add fix for rfbz#5433
 
