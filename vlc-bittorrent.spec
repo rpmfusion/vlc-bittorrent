@@ -9,6 +9,7 @@ Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  gcc-c++
 BuildRequires:  libtool
+BuildRequires:  autoconf-archive
 BuildRequires:  desktop-file-utils
 
 BuildRequires:  boost-devel
