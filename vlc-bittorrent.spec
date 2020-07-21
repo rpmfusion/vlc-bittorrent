@@ -1,5 +1,5 @@
 Name:           vlc-bittorrent
-Version:        2.10
+Version:        2.11
 Release:        1%{?dist}
 Summary:        Bittorrent plugin for VLC
 
@@ -67,6 +67,9 @@ fi || :
 
 
 %changelog
+* Tue Jul 21 2020 Leigh Scott <leigh123linux@gmail.com> - 2.11-1
+- Update to 2.11
+
 * Thu Jun 04 2020 Leigh Scott <leigh123linux@gmail.com> - 2.10-1
 - Update to 2.10
 
