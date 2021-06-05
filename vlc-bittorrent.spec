@@ -1,6 +1,6 @@
 Name:           vlc-bittorrent
-Version:        2.12
-Release:        2%{?dist}
+Version:        2.13
+Release:        1%{?dist}
 Summary:        Bittorrent plugin for VLC
 
 License:        GPLv3+
@@ -67,6 +67,9 @@ fi || :
 
 
 %changelog
+* Mon May 24 2021 Leigh Scott <leigh123linux@gmail.com> - 2.13-1
+- Update to 2.13
+
 * Sat Apr 24 2021 Leigh Scott <leigh123linux@gmail.com> - 2.12-2
 - Rebuilt for removed libstdc++ symbol (#1937698)
 
