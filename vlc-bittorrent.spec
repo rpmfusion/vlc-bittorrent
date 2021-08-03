@@ -1,6 +1,6 @@
 Name:           vlc-bittorrent
 Version:        2.13
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bittorrent plugin for VLC
 
 License:        GPLv3+
@@ -67,6 +67,9 @@ fi || :
 
 
 %changelog
+* Tue Aug 03 2021 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 2.13-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
+
 * Mon May 24 2021 Leigh Scott <leigh123linux@gmail.com> - 2.13-1
 - Update to 2.13
 
