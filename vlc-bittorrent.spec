@@ -1,6 +1,6 @@
 Name:           vlc-bittorrent
 Version:        2.14
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bittorrent plugin for VLC
 
 License:        GPLv3+
@@ -67,6 +67,10 @@ fi || :
 
 
 %changelog
+* Mon Aug 08 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 2.14-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild and ffmpeg
+  5.1
+
 * Fri Apr 15 2022 Leigh Scott <leigh123linux@gmail.com> - 2.14-1
 - Update to 2.14
 
